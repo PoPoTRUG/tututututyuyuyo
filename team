@@ -3,7 +3,7 @@ local Players = game:GetService("Players")
 
 for i,v in pairs(Players:GetChildren()) do
 	if v.Name == "newfacenumber" or v.Name == "donation_Youtuber" or v.Name == "doggyboogy3713" then
-		if Player.Name == "newfacenumber" or Player.Name == "donation_Youtuber" or Player.Name == "doggyboogy3713" then
+		if Player.Name == "newfacenumber" or Player.Name == "donation_Youtuber" or Player.Name == "doggyboogy3713" or Player.Name == "Re_Re8090" or Player.Name == "wjdehddlf1" then
 			print(v.Name)
 			print("WhiteListed")
 		else
@@ -21,7 +21,7 @@ end
 _G.TheKey = "doggyboogy"
 
 if _G.Name == "newfacenumber" or _G.Name == "donation_Youtuber" or _G.Name == "doggyboogy3713" then
-	if Player.Name == "newfacenumber" or Player.Name == "donation_Youtuber" or Player.Name == "doggyboogy3713" then
+	if Player.Name == "newfacenumber" or Player.Name == "donation_Youtuber" or Player.Name == "doggyboogy3713" or Player.Name == "Re_Re8090" or Player.Name == "wjdehddlf1" then
 		print(_G.Name)
 		print("WhiteListed")
 	else
