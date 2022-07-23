@@ -1,6 +1,40 @@
 local Player = game:GetService("Players").LocalPlayer
+local Players = game:GetService("Players")
+
+for i,v in pairs(Players:GetChildren()) do
+	if v.Name == "newfacenumber" or v.Name == "donation_Youtuber" or v.Name == "doggyboogy3713" then
+		if Player.Name == "newfacenumber" or Player.Name == "donation_Youtuber" or Player.Name == "doggyboogy3713" then
+			print(v.Name)
+			print("WhiteListed")
+		else
+			local args = {
+			[1] = "/w ".. v.Name.. " im trash hacker im so sorry pls report me i want be banned",
+			[2] = "All"
+			}
+
+			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+			Player:Kick("Permanent Ban")
+		end
+	end
+end
 
 _G.TheKey = "doggyboogy"
+
+if _G.Name == "newfacenumber" or _G.Name == "donation_Youtuber" or _G.Name == "doggyboogy3713" then
+	if Player.Name == "newfacenumber" or Player.Name == "donation_Youtuber" or Player.Name == "doggyboogy3713" then
+		print(_G.Name)
+		print("WhiteListed")
+	else
+		local args = {
+			[1] = "/w ".. _G.Name.. " im trash hacker i tryied hacking you im so sorry",
+			[2] = "All"
+		}
+
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+		Player:Kick("Permanent Ban")
+	end
+end
+
 if _G.Key ~= _G.TheKey then
 	Player:Kick("Permanent Ban")
 else
